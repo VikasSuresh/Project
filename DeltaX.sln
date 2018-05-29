@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeltaX", "DeltaX\DeltaX.csproj", "{EDD73A60-56B1-44F1-9D80-B0B46A66DD5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeltaXApp", "DeltaXApp\DeltaXApp.csproj", "{78DE3ED3-9171-40F5-8ABA-3D706B752343}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDD73A60-56B1-44F1-9D80-B0B46A66DD5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD73A60-56B1-44F1-9D80-B0B46A66DD5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD73A60-56B1-44F1-9D80-B0B46A66DD5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD73A60-56B1-44F1-9D80-B0B46A66DD5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78DE3ED3-9171-40F5-8ABA-3D706B752343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78DE3ED3-9171-40F5-8ABA-3D706B752343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78DE3ED3-9171-40F5-8ABA-3D706B752343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78DE3ED3-9171-40F5-8ABA-3D706B752343}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

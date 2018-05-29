@@ -1,0 +1,47 @@
+﻿@model IEnumerable<DeltaXApp.Models.Movie>
+
+@{
+    ViewBag.Title = "Movies";
+}
+
+<h2>Movies</h2>
+
+<p>
+    @Html.ActionLink("Add New Movie", "AddMovie")
+</p>
+<table class="table">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearOfRelease)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearOfRelease)
+        </td>
+        <td>
+            @Html.ActionLink("Actors", "getActors",new { id=item.Movie_id })
+        </td>
+        <td>
+            @Html.ActionLink("Producer", "getProducers", new { id = item.Movie_id })
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditMovie",item) |        
+            @Html.ActionLink("Delete", "DeleteMovie",item)
+        </td>
+    </tr>
+}
+
+</table>

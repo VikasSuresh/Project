@@ -1,0 +1,53 @@
+﻿@model IEnumerable<DeltaXApp.Models.Actor>
+
+@{
+    ViewBag.Title = "Actors";
+}
+
+<h2>Actors</h2>
+
+<p>
+    @Html.ActionLink("Add New Actor", "AddActor")
+</p>
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sex)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bio)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sex)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bio)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditActor", item) |
+                @Html.ActionLink("Delete", "DeleteActor", item)
+            </td>
+        </tr>
+    }
+
+</table>
